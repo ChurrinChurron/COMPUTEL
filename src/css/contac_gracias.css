@@ -1,0 +1,285 @@
+/*-----CONTACTANOS----*/
+
+#fondoContacto, #fondoGracias {
+
+    background: url(../../assets/fondo-1.webp) no-repeat, url(../../assets/fondo-2.webp) no-repeat;
+    background-position: center left, top right;
+    background-size: 15em, 13em;
+    padding: 4em 1.4em 7em 1.4em;
+}
+
+#titContac {
+
+    margin-bottom: 4em;
+    text-align: center;
+    font-size: 1.4em;
+    font-family: var(--medium);
+    color: var(--azul-rey);
+}
+
+.contactanos__info {
+
+    text-align: center;
+    color: var(--azul-rey);
+}
+
+.contactanos__info > img {
+
+    width: 3.6em;
+    margin-bottom: 1.4em;
+}
+
+.contactanos__info h3 {
+
+    font-size: 1.3em;
+    font-family: var(--medium);
+}
+
+.contactanos__info p {
+
+    font-size: 0.9em;
+    margin: 0.8em 0;
+}
+
+.contactanos__info p img, .contactanos__multi img {
+
+    width: 1.3em;
+    margin-right: 1em;
+}
+
+.contactanos__multi {
+
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.contactanos__multi #iconoUbic {
+
+    width: 1em;
+}
+
+.contactanos__form {
+
+    margin: 4em auto 0 auto;
+    max-width: 28em;
+    padding: 2em;
+    background-color: var(--blanco);
+    box-shadow: 0 1px 5px 0 var(--blanco-gris);
+}
+
+.contactanos__form p {
+
+    margin-bottom: 2em;
+    text-align: center;
+    font-size: 0.860em;
+    color: var(--gris);
+}
+
+.contactanos__form input, .contactanos__form textarea {
+
+    outline: none;
+    width: 100%;
+    padding: 0.8em 1.5em;
+    border: 1px solid var(--blanco-gris);
+    margin: 0.3em 0;
+    font-size: 0.750em;
+    color: var(--gris-oscuro);
+    font-family: var(--regular);
+}
+
+.contactanos__form textarea {
+
+    min-width: 100%;
+    max-width: 100%;
+    height: 8em;
+    resize: none;
+}
+
+.contactanos__form input[type="submit"] {
+
+    font-size: 0.880em;
+    background-color: var(--azul-rey);
+    color: var(--blanco);
+    cursor: pointer;
+    transition: .4s;
+}
+
+.contactanos__form input[type="submit"]:hover {
+
+    background-color: var(--azul);
+}
+
+#imgMapa {
+
+    display: block;
+    width: 100%;
+    max-width: 60em;
+    margin: 5em auto 0 auto;
+    border-radius: 1.4em;
+}
+
+main > a {
+
+    display: block;
+    max-width: 16em;
+    margin: 5em auto 0 auto;
+    padding: 0.640em 4em;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid transparent;
+    background-color: var(--azul-rey);
+    color: var(--blanco);
+    transition: .4s;
+}
+
+main > a:hover {
+
+    border: 2px solid var(--azul-rey);
+    background-color: transparent;
+    color: var(--azul-rey);
+}
+
+/*----GRACIAS----*/
+
+#fondoGracias {
+
+    background-position: top left, bottom right;
+}
+
+.gracias {
+
+    text-align: center;
+    color: var(--azul-rey);
+}
+
+.gracias h3 {
+
+    margin: 1.5em 0 0.5em 0;
+    font-size: 1.9em;
+    font-family: var(--medium);
+}
+
+.gracias p {
+
+    font-size: 0.940em;
+}
+
+.gracias > a {
+
+    display: block;
+    max-width: 16em;
+    margin: 3.5em auto;
+    padding: 0.640em 4em;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid transparent;
+    background-color: var(--azul-rey);
+    color: var(--blanco);
+    transition: .4s;
+}
+
+.contactanos__redes {
+
+    display: flex;
+    justify-content: center;
+    gap: 0.7em;
+    margin-top: 1.5em;
+}
+
+.contactanos__redes a img {
+
+    width: 2.2em;
+}
+
+@media screen and (min-width: 992px) {
+    
+    /*----CONTACTANOS----*/
+    
+    #fondoContacto, #fondoGracias {
+
+        background-size: 20em, 16em;
+        padding: 2em 1.4em 7em 1.4em;
+    }
+
+    #titContac {
+
+        margin-bottom: 1em;
+        font-size: 1.6em;
+    }
+
+    .contactanos {
+
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    .contactanos__info {
+
+        position: relative;
+        top: 4em;
+        text-align: left;
+    }
+
+    .contactanos__info img {
+
+        width: 3.8em;
+    }
+
+    .contactanos__info h3 {
+
+        font-size: 2.1em;
+    }
+
+    .contactanos__info p {
+
+        font-size: 1em;
+        margin: 0.5em 0;
+    }
+    
+    .contactanos__info p img, .contactanos__multi img {
+    
+        width: 1.4em;
+    }
+    
+    .contactanos__multi {
+    
+        justify-content: flex-start;
+    }
+    
+    .contactanos__multi #iconoUbic {
+    
+        width: 1.1em;
+    }
+
+    .contactanos__form {
+
+        margin: 4em 0 0 8.2em;
+        padding: 2.4em 3em;
+        max-width: 30em;
+    }
+
+    .contactanos__form p {
+
+        text-align: left;
+        font-size: 0.9em;
+    }
+
+    .contactanos__form input, .contactanos__form textarea {
+
+        font-size: 0.820em;
+    }
+
+    .contactanos__form input[type="submit"] {
+
+        font-size: 1em;
+    }
+
+    /*----GRACIAS----*/
+
+    .gracias h3 {
+
+        font-size: 2.3em;
+    }
+}
