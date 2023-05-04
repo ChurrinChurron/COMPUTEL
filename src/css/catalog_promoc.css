@@ -1,0 +1,415 @@
+#fondoPromocion, #fondoCatalogo {
+
+    background: url(../../assets/fondo-1.webp) no-repeat;
+    background-position: 0 10em;
+    background-size: 15em;
+}
+
+.guiaPag {
+
+    margin: 2em 0 0 1.4em;
+}
+
+#sliderPromo {
+
+    margin: 4em 0 6em 0;
+}
+
+#sliderPromo .splide__pagination {
+
+    display: none;
+}
+
+#sliderPromo .splide__arrow svg {
+
+    fill: var(--azul-rey);
+    height: 1.3em;
+    width: 1.3em;
+}
+
+#sliderPromo .splide__slide {
+
+    position: relative;
+}
+
+.splide__slide img {
+
+    width: 140%;
+    max-width: 48em;
+}
+
+.promo__texto {
+
+    position: absolute;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.promo__texto h3 {
+
+    font-size: 1.7em;
+    font-family: var(--medium);
+    color: var(--azul-rey);
+}
+
+.promo__texto p {
+
+    margin: 1.2em 0;
+    color: var(--azul-rey);
+}
+
+.promo__texto a {
+
+    display: block;
+    max-width: 18.9em;
+    margin: 0 auto;
+    font-size: 0.880em;
+    padding: 0.640em 4em;
+    text-align: center;
+    text-decoration: none;
+    transition: .4s;
+}
+
+.promo__texto--uno a {
+
+    border: 2px solid transparent;
+    background-color: var(--azul-rey);
+    color: var(--blanco);
+}
+
+.promo__texto--uno a:hover {
+
+    border: 1px solid var(--azul-rey);
+    background-color: transparent;
+    color: var(--azul-rey);
+}
+
+.promo__texto--dos a {
+
+    border: 1px solid var(--blanco);
+    background-color: transparent;
+    color: var(--blanco);
+}
+
+.promo__texto--dos a:hover {
+
+    background-color: var(--blanco);
+    color: var(--azul-rey);
+}
+
+.promo__texto--tres a {
+
+    border: 1px solid transparent;
+    background-color: var(--blanco-perla);
+    color: var(--gris-oscuro);
+}
+
+.promo__texto--tres a:hover {
+
+    border: 1px solid var(--blanco);
+    background-color: transparent;
+    color: var(--blanco);
+}
+
+.promo__texto a i {
+
+    margin-left: 0.5em;
+}
+
+.promo__texto--dos h3,
+.promo__texto--dos p {
+
+    color: var(--blanco);
+}
+
+.promo__logos {
+
+    display: flex;
+    align-items: flex-end;
+    gap: 0 1em;
+    position: absolute;
+    bottom: 0.4em;
+    right: 1em;
+}
+
+#imgCalidad {
+
+    width: 3.6em;
+}
+
+#imgLogo {
+
+    height: 2.8em;
+}
+
+/*----CATALOGOS----*/
+
+#fondoCatalogo {
+
+    background-position: 0 30em;
+}
+
+.catalogos {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5em 0;
+    padding: 5em 1.4em;
+    background: url(../../assets/Catalogos/fondo_catalogo.webp) no-repeat;
+    background-position-y: center;
+}
+
+.catalogos__conten {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 30em;
+    text-align: center;
+    color: var(--blanco);
+    box-shadow: 0px 1px 5px 0px var(--blanco-gris);
+}
+
+.catalogos__texto {
+
+    background: url(../../assets/Catalogos/fondo_catalogo_dos.webp) no-repeat;
+    background-size: cover;
+    padding: 2em;
+}
+
+.catalogos__texto h3 {
+
+    margin-top: 2em;
+    font-size: 1.6em;
+    font-family: var(--medium);
+}
+
+.catalogos__texto h4 {
+
+    position: relative;
+    font-size: 1.3em;
+    font-family: var(--medium);
+}
+
+.catalogos__texto h4::after {
+
+    content: "";
+    position: absolute;
+    display: block;
+    top: 2em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8em;
+    height: 0.090em;
+    background-color: var(--blanco);
+}
+
+.catalogos__texto button {
+
+    outline: none;
+    display: block;
+    margin: 3.5em auto 3em auto;
+    padding: 0.460em 3.4em;
+    font-size: 1.040em;
+    border: 2px solid transparent;
+    background-color: var(--blanco);
+    font-family: var(--medium);
+    color: var(--azul-rey);
+    cursor: pointer;
+    transition: .4s;
+}
+
+.catalogos__texto button:hover {
+
+    border: 2px solid var(--blanco);
+    background-color: transparent;
+    color: var(--blanco);
+}
+
+.catalogos__img {
+
+    position: relative;
+    height: 19em;
+    background-color: var(--blanco);
+}
+
+.catalogos__img img {
+
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 23em;
+}
+
+@media screen and (min-width: 768px) {
+    
+    #fondoPromocion {
+
+        background-size: 24em;
+    }
+    
+    .guiaPag {
+    
+        margin: 2em 0 0 12%;
+    }
+    
+    #sliderPromo {
+    
+        margin: 4em auto 6em auto;
+        max-width: 66em;
+    }
+    
+    .promo__texto {
+
+        text-align: left;
+        width: 80%;
+    }
+    
+    .splide__slide img {
+
+        width: 100%;
+        max-width: none;
+    }
+
+    .promo__texto a {
+
+        margin: 0;
+        max-width: 15.9em;
+        padding: 0.640em 1em;
+        font-size: 0.880em;
+    }
+
+    .promo__logos {
+    
+        bottom: 2em;
+        right: 3em;
+    }
+
+    #imgCalidad {
+
+        width: 6em;
+    }
+
+    #imgLogo {
+
+        height: 3.7em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+    .promo__texto h3 {
+    
+        font-size: 2.2em;
+    }
+    
+    .promo__texto p {
+    
+        margin: 1.4em 0;
+        font-size: 1.1em;
+    }
+    
+    .promo__texto a {
+
+        font-size: 1em;
+    }
+    
+    .promo__texto--tres h3,
+    .promo__texto--tres p {
+    
+        color: var(--blanco);
+    }
+
+    /*----CATALOGOS----*/
+
+    #fondoCatalogo {
+
+        background-position: 0 30em;
+    }
+    
+    .catalogos {
+    
+        gap: 5em 0;
+        padding: 6em 1.4em;
+        background-size: contain;
+        background-position-y: center;
+    }
+    
+    .catalogos__conten {
+    
+        flex-direction: row;
+        max-width: 68em;
+        text-align: left;
+    }
+    
+    .catalogos__texto {
+    
+        width: 64%;
+        padding: 2em 3em;
+    }
+
+    .catalogos__texto h5 {
+
+        font-size: 1em;
+    }
+    
+    .catalogos__texto h3 {
+    
+        margin-top: 1.4em;
+        font-size: 2.4em;
+    }
+    
+    .catalogos__texto h4 {
+    
+        font-size: 1.5em;
+    }
+    
+    .catalogos__texto h4::after {
+    
+        left: 16%;
+    }
+    
+    .catalogos__texto button {
+    
+        margin: 4em 0 0 0;
+    }
+    
+    .catalogos__img {
+    
+        width: 36%;
+        height: 23em;
+    }
+    
+    .catalogos__img img {
+    
+        bottom: -1.7em;
+        left: 40%;
+        width: 116%;
+        max-width: 26em;
+    }    
+}
+
+@media screen and (min-width: 1200px) {
+    
+    #sliderPromo .splide__arrow {
+
+        background: transparent;
+    }
+    
+    #sliderPromo .splide__arrow:nth-child(1) {
+
+        left: -4em;
+    }
+
+    #sliderPromo .splide__arrow:nth-child(2) {
+
+        right: -4em;
+    }
+}
