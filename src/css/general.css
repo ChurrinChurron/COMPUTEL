@@ -1298,6 +1298,13 @@ footer {
 
         margin: 0 1.3em;
     }
+
+    /*DESCARGAR CATALOGO*/
+
+    .descargaCat__texto {
+    
+        left: 20%;
+    }
     
     /*FOOTER*/
     
