@@ -45,6 +45,7 @@
     --azul: hsl(219, 55%, 48%);
     --azul-rey: hsl(219, 74%, 35%);
     --azul-rey-osc: hsl(219, 88%, 26%);
+    --azul-rey-op: hsla(219, 88%, 26%, 0.860);
 }
 
 * {

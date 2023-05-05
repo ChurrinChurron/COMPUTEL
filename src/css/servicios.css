@@ -1,0 +1,247 @@
+.guiaPag {
+
+    margin: 2em 0 0 1.4em;
+}
+
+/*SERVICIOS*/
+
+.servicios {
+
+    background: url(../../assets/fondo-1.webp) no-repeat, url(../../assets/fondo-2.webp) no-repeat;
+    background-position: top left, bottom right;
+    background-size: 17em, 15em;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    gap: 3em;
+    padding: 6em 1.4em;
+}
+
+.servicios a {
+
+    text-decoration: none;
+    margin: 0 auto;
+    color: var(--blanco);
+}
+
+.servicios__conten {
+
+    position: relative;
+    width: 100%;
+    max-width: 22em;
+}
+
+.servicios__conten img {
+
+    width: 100%;
+}
+
+.servicios__conten h4 {
+
+    position: absolute;
+    bottom: 0.2em;
+    width: 100%;
+    padding: 0.8em 1em 0.8em 1.8em;
+    text-align: center;
+    font-size: 1.4em;
+    line-height: 1.4em;
+    background-color: var(--azul-rey-op);
+    font-family: var(--medium);
+    transition: .4s;
+}
+
+.servicios__conten:hover h4 {
+
+    padding-top: 28%;
+    padding-bottom: 31.8%;
+}
+
+.servicios__enlace {
+
+    position: absolute;
+    width: 100%;
+    bottom: 3em;
+    text-align: center;
+    color: var(--blanco);
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+}
+
+.servicios__enlace p {
+
+    font-family: var(--light);
+    font-size: 0.860em;
+}
+
+.servicios__enlace p i {
+
+    margin-left: 0.3em;
+}
+
+.servicios__conten:hover .servicios__enlace {
+
+    visibility: visible;
+    opacity: 1;
+}
+
+/*TRABAJO*/
+
+.trabajo {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 6em 1.4em;
+    background-color: var(--blanco-perla);
+}
+
+.trabajo__texto img {
+
+    height: 4.6em;
+}
+
+.trabajo__texto h3 {
+
+    margin: 1.6em 0;
+    font-size: 1.450em;
+    font-family: var(--medium);
+    color: var(--azul-rey);
+}
+
+#sliderTrabajo .splide__pagination {
+
+    display: none;
+}
+
+#sliderTrabajo .splide__arrow {
+
+    border-radius: 0;
+    padding: 2.6em 0;
+}
+
+#sliderTrabajo .splide__arrow:nth-child(1) {
+
+    left: 0;
+}
+
+#sliderTrabajo .splide__arrow:nth-child(2) {
+
+    right: 0;
+}
+
+#sliderTrabajo .splide__arrow svg {
+
+    fill: var(--azul-rey);
+    height: 1.2em;
+    width: 1.2em;
+}
+
+#sliderTrabajo .splide__slide {
+
+    display: flex;
+}
+
+#sliderTrabajo .splide__slide img {
+
+    width: 50%;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .guiaPag {
+    
+        margin: 2em 0 0 12%;
+    }
+    
+    .servicios {
+
+        grid-template-columns: repeat(2, 1fr);
+    }    
+}
+
+@media screen and (min-width: 992px) {
+    
+    .servicios {
+
+        background-size: 21em, 18em;
+        grid-template-columns: repeat(2, 22em);
+        justify-content: center;
+        gap: 1.8em;
+    }
+
+    /*TRABAJO*/
+
+    .trabajo {
+
+        flex-direction: row;
+        justify-content: flex-end;
+        text-align: left;
+        padding: 6em 0;
+    }
+
+    .trabajo__texto img {
+
+        height: 4em;
+    }
+
+    .trabajo__texto h3 {
+
+        margin: 0.4em 1.4em 0.4em 0;
+        font-size: 1.6em;
+    }
+
+    #sliderTrabajo {
+
+        width: 45em;
+    }
+
+    #sliderTrabajo .splide__arrow {
+
+        border-radius: 0;
+        padding: 4.5em 0.2em;
+    }
+
+    #sliderTrabajo .splide__arrow svg {
+
+        height: 1.6em;
+        width: 1.6em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
+    .servicios {
+
+        grid-template-columns: repeat(3, 22em);
+    }
+
+    .trabajo {
+
+        padding: 6em 0 6em 1.4em;
+    }
+
+    .trabajo__texto h3 {
+
+        margin: 0.4em 1.4em 0.4em 0;
+        font-size: 1.8em;
+    }
+
+    #sliderTrabajo {
+
+        width: 58em;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+
+    #sliderTrabajo {
+
+        width: 64em;
+    }
+
+    .trabajo__texto h3 {
+
+        margin: 0.4em 1.8em 0.4em 0;
+    }
+}
