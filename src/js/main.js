@@ -5,6 +5,8 @@ let linkMob = document.querySelectorAll(".linkMob");
 let abrirChat = document.querySelector("#atenCliente");
 let chat = document.querySelector("#atenChat");
 let subProd = document.querySelectorAll(".filtroEnlace");
+let modal = document.querySelector(".modal");
+let cerrarModal = document.querySelector("#cerrarModal");
 
 /*FUNCION MENU MOVIL*/
 
@@ -44,3 +46,10 @@ for(let sub of subProd) {
         sub.classList.toggle("mostrar");
     })
 }
+
+/*FUNCION MODAL*/
+
+cerrarModal.addEventListener("click", () => {
+
+    modal.classList.add("cerrar");
+})

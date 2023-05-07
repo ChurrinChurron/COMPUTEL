@@ -497,6 +497,7 @@ main {
     height: 23em;
     margin: 0 2.8em;
     border: 1px solid var(--azul-rey);
+    background-color: var(--blanco);
     border-radius: 0.4em;
 }
 
