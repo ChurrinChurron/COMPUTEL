@@ -1,0 +1,254 @@
+.guiaPag {
+
+    margin: 2em 0 0 1.4em;
+}
+
+.servicio__objetivo {
+
+    background: url(../../assets/fondo-1.webp) no-repeat, url(../../assets/fondo-2.webp) no-repeat;
+    background-position: top left, bottom right;
+    background-size: 16em, 14em;
+    padding: 3em 1.4em 6em 1.4em;
+    text-align: center;
+    color: var(--azul-rey);
+}
+
+.servicio__objetivo h3 {
+
+    font-size: 1.3em;
+    font-family: var(--light);
+}
+
+.servicio__ventajas {
+
+    margin: 4em 0;
+}
+
+.servicio__ventajas h4 {
+
+    font-family: var(--light);
+    font-size: 1.3em;
+}
+
+.servicio__ventajas h4 b {
+
+    font-family: var(--medium);
+}
+
+.servicio__ventajas img {
+
+    margin: 2em auto;
+    width: 100%;
+    max-width: 30em;
+}
+
+.servicio__objetivo a {
+
+    display: block;
+    max-width: 18em;
+    margin: 3em auto 0 auto;
+    padding: 0.640em 1em;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid transparent;
+    background-color: var(--azul-rey);
+    color: var(--blanco);
+    transition: .4s;
+}
+
+.servicio__objetivo a i {
+
+    margin-left: 0.5em;
+}
+
+.servicio__objetivo a:hover {
+
+    border: 2px solid var(--azul-rey);
+    background-color: transparent;
+    color: var(--azul-rey);
+}
+
+/*OTROS SERVIVIOS*/
+
+.otrosServ {
+
+    padding: 3em 1.4em 8em 1.4em;
+}
+
+.otrosServ h3 {
+
+    margin-bottom: 3em;
+    font-size: 1.4em;
+    text-align: center;
+    font-family: var(--medium);
+    color: var(--azul-rey);
+}
+
+#sliderServicios .splide__pagination {
+
+    display: none;
+}
+
+#sliderServicios .splide__arrow svg {
+
+    fill: var(--azul-rey);
+    height: 1.3em;
+    width: 1.3em;
+}
+
+#sliderServicios .splide__slide {
+
+    width: 21.1em !important;
+    margin: 0 0.5em;
+}
+
+#sliderServicios a {
+
+    text-decoration: none;
+    margin: 0 auto;
+    color: var(--blanco);
+}
+
+.servicios__conten {
+
+    position: relative;
+    width: 100%;
+    max-width: 22em;
+}
+
+.servicios__conten img {
+
+    width: 100%;
+}
+
+.servicios__conten h4 {
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0.8em 1.8em;
+    text-align: center;
+    font-size: 1.4em;
+    line-height: 1.4em;
+    background-color: var(--azul-rey-op);
+    font-family: var(--medium);
+    transition: .4s;
+}
+
+.servicios__conten:hover h4 {
+
+    padding-top: 28%;
+    padding-bottom: 31.8%;
+}
+
+.servicios__enlace {
+
+    position: absolute;
+    width: 100%;
+    bottom: 3em;
+    text-align: center;
+    color: var(--blanco);
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+}
+
+.servicios__enlace p {
+
+    font-family: var(--light);
+    font-size: 0.860em;
+}
+
+.servicios__enlace p i {
+
+    margin-left: 0.3em;
+}
+
+.servicios__conten:hover .servicios__enlace {
+
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (min-width: 992px) {
+    
+    .guiaPag {
+    
+        margin: 2em 0 0 12%;
+    }
+
+    .servicio__objetivo {
+
+        background-size: 20em, 18em;
+        padding: 3em 1.4em 6em 1.4em;
+    }
+
+    .servicio__objetivo h3 {
+
+        font-size: 1.6em;
+        width: 31em;
+        margin: 0 auto 4em auto;
+    }
+    
+    .servicio__ventajas {
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3em auto;
+        width: 62em;
+        text-align: left;
+    }
+
+    .servicio__ventajas:nth-child(3) {
+
+        flex-direction: row-reverse;
+        text-align: end;
+    }
+    
+    .servicio__ventajas h4 {
+    
+        font-size: 1.9em;
+        margin: 0 2em;
+    }
+    
+    .servicio__ventajas img {
+    
+        margin: 2em auto;
+        width: 100%;
+        max-width: 30em;
+    }
+    
+    .servicio__objetivo a {
+    
+        font-size: 1.1em;
+    }
+    
+    /*OTROS SERVICIOS*/
+
+    .otrosServ {
+
+        padding: 3em 1.4em 12em 1.4em;
+    }
+
+    .otrosServ h3 {
+
+        font-size: 1.6em;
+    }
+
+    #sliderServicios .splide__track {
+
+        margin: 0 5em;
+    }
+
+    #sliderServicios .splide__arrow {
+
+        background: transparent;
+    }
+
+    #sliderServicios .splide__arrow svg {
+
+        height: 1.5em;
+        width: 1.5em;
+    }
+}

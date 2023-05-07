@@ -4,6 +4,7 @@ let menuMovil = document.querySelector(".navMob");
 let linkMob = document.querySelectorAll(".linkMob");
 let abrirChat = document.querySelector("#atenCliente");
 let chat = document.querySelector("#atenChat");
+let subProd = document.querySelectorAll(".filtroEnlace");
 
 /*FUNCION MENU MOVIL*/
 
@@ -33,3 +34,13 @@ abrirChat.addEventListener("click", () => {
 
     abrirChat.classList.toggle("chat");
 })
+
+/*FUNCION MOSTRAR LISTA DE PRODUCTOS*/
+
+for(let sub of subProd) {
+
+    sub.addEventListener("click", () => {
+
+        sub.classList.toggle("mostrar");
+    })
+}

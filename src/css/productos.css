@@ -1,0 +1,289 @@
+.guiaPag {
+
+    margin: 2em 0 0 1.4em;
+}
+
+/*PRODUCTOS*/
+
+.productos {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4em 1.4em 8em 1.4em;
+    text-align: center;
+    color: var(--azul-rey);
+}
+
+/*PRODUCTOS FILTRO*/
+
+.productos__filtro h3 {
+
+    position: relative;
+    font-size: 1.2em;
+    font-family: var(--medium);
+}
+
+.productos__filtro h3::after {
+
+    content: "";
+    position: absolute;
+    width: 13em;
+    bottom: -0.8em;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 0.070em;
+    background-color: var(--azul-rey);
+}
+
+.filtro__lista {
+
+    margin: 2em 0;
+    width: 16em;
+}
+
+.filtro__lista > a {
+
+    display: block;
+    padding: 0.7em 0;
+    border: 1px solid var(--blanco-gris);
+    font-size: 0.950em;
+    text-decoration: none;
+    color: var(--azul-rey);
+    transition: .4s;
+}
+
+.filtro__lista p {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7em 0;
+    font-size: 0.950em;
+    border: 1px solid var(--blanco-gris);
+    transition: .4s;
+    cursor: pointer;
+}
+
+.filtro__lista p i {
+
+    margin-left: 1em;
+    transition: .4s;
+}
+
+.filtro__lista > a:hover,
+.filtro__lista p:hover {
+
+    background-color: var(--azul);
+    color: var(--blanco);
+}
+
+.filtroEnlace.mostrar {
+
+    background-color: var(--azul);
+    color: var(--blanco);
+}
+
+.filtroEnlace.mostrar i {
+
+    transform: rotate(90deg);
+}
+
+.filtroLista {
+
+    display: none;
+}
+
+.filtroEnlace.mostrar + .filtroLista {
+
+    display: block;
+}
+
+.filtroLista a {
+
+    display: block;
+    color: var(--azul);
+    text-decoration: none;
+    margin: 0.4em 0;
+    font-size: 0.9em;
+}
+
+/*PRODUCTOS LISTA*/
+
+.productos__lista {
+
+    margin-top: 3em;
+}
+
+.productos__lista > p {
+
+    margin-bottom: 0.8em;
+    padding: 0.8em 0;
+    font-size: 0.9em;
+    background-color: var(--blanco-perla);
+}
+
+.lista__conten {
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3em;
+    padding-top: 4em;
+    border-top: 1px solid var(--gris-claro);
+}
+
+.productos__conten {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 16em;
+    height: 23em;
+    margin: 0 2.8em;
+    border: 1px solid var(--azul-rey);
+    border-radius: 0.4em;
+    box-shadow: 0 1px 3px 2px var(--blanco-gris);
+}
+
+.productos__conten h4 {
+
+    width: 100%;
+    padding: 1em 2em;
+    height: 4.6em;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font-size: 1.1em;
+    background-color: var(--azul-rey);
+    color: var(--blanco);
+}
+
+.productos__conten img {
+
+    padding: 2em 1em;
+    height: 14.4em;
+}
+
+.productos__conten > a {
+
+    position: absolute;
+    bottom: 0;
+    text-decoration: none;
+    margin-bottom: 1em;
+    padding: 0.4em 3em;
+    background-color: var(--azul-rey);
+    color: var(--blanco);
+    transition: .4s;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .guiaPag {
+    
+        margin: 2em 0 0 12%;
+    }
+    
+    .productos__filtro h3::after {
+
+        width: 17em;
+    }
+
+    .filtro__lista {
+
+        width: 20em;
+    }
+    
+    .lista__conten {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+    /*PRODUCTOS*/
+
+    .productos {
+
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center;
+        padding: 5em 1.4em 8em 1.4em;
+        text-align: left;
+    }
+
+    /*PRODUCTOS FILTRO*/
+
+    .productos__filtro h3::after {
+
+        width: 8em;
+        bottom: -1.180em;
+        height: 0.060em;
+    }
+
+    .filtro__lista {
+
+        width: 10em;
+    }
+
+    .filtro__lista > a {
+
+        padding: 0.7em 0.5em;
+        font-size: 0.920em;
+    }
+
+    .filtro__lista p {
+
+        position: relative;
+        justify-content: flex-start;
+        padding: 0.7em 0.5em;
+        font-size: 0.920em;
+    }
+
+    .filtro__lista p i {
+
+        position: absolute;
+        right: 1em;
+    }
+
+    .filtroLista a {
+
+        margin: 0.4em 0 0.4em 1.1em;
+        font-size: 0.880em;
+    }
+
+    /*PRODUCTOS LISTA*/
+
+    .productos__lista {
+
+        margin: 0 0 0 3em;
+    }
+
+    .productos__lista > p {
+
+        margin-bottom: 0.8em;
+        padding: 0.8em 1.5em;
+    }
+
+    .lista__conten {
+
+        grid-template-columns: repeat(3, 14em);
+        gap: 2em;
+        justify-items: center;
+        padding-top: 4em;
+    }
+
+    .productos__conten {
+
+        width: 15em;
+        height: 21em;
+        margin: 0 2.8em;
+    }
+
+    .productos__conten img {
+
+        height: 12.4em;
+    }
+}
