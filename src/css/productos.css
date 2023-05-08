@@ -218,11 +218,6 @@
 }
 
 @media screen and (min-width: 768px) {
-    
-    .guiaPag {
-    
-        margin: 2em 0 0 12%;
-    }
 
     /*PRODUCTO INDIVIDUAL*/
 
@@ -251,6 +246,11 @@
 }
 
 @media screen and (min-width: 992px) {
+
+    .guiaPag {
+    
+        margin: 2em 0 0 12%;
+    }
     
     /*PRODUCTO INDIVIDUAL*/
 

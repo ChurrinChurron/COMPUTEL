@@ -254,12 +254,7 @@
 
         background-size: 24em;
     }
-    
-    .guiaPag {
-    
-        margin: 2em 0 0 12%;
-    }
-    
+
     #sliderPromo {
     
         margin: 4em auto 6em auto;
@@ -304,6 +299,11 @@
 }
 
 @media screen and (min-width: 992px) {
+
+    .guiaPag {
+    
+        margin: 2em 0 0 12%;
+    }
     
     .promo__texto h3 {
     
